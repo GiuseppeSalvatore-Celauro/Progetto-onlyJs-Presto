@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presto.it - Home</title>
+
+    <!-- SwiperJs CDN  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- cdn Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- cdn bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- link css custom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar start  -->
+
+    <nav id='navBar' class="navbar navbar-expand-lg bg-w border-bottom border-1 fixed-top transistion-custom">
+        <div class="container-fluid p-0 pt-2 bg-transparent">
+            <div class="row w-100 px-5 m-0 bg-transparent">
+                <div class="col-2 mt-1 bg-transparent dim-custom">
+                    <span id="logo" class="navbar-brand-custom text-g mini-border fw-bold fst-italic bg-transparent transistion-custom" href="#">Presto.it</span>
+                </div>
+                <div class="col-10 bg-transparent">
+                        <div class="row w-100 bg-transparent justify-content-end">
+                            <div class="col-4 pt-1 bg-transparent d-none d-lg-block">
+                                <div class="w-100  d-flex justify-content-end align-items-end gap-5 bg-transparent">
+                                    <span class="nav-item-custom bg-transparent">
+                                        <a href="#" class="link-active text-decoration-none mini-border text-g bg-transparent transistion-custom" >Home</a>
+                                    </span>
+                                    <span class="nav-item-custom bg-transparent">
+                                        <a href="annunci.html"  class="link text-decoration-none text-d-gray bg-transparent transistion-custom">Annunci</a>
+                                    </span>
+                                    <span class="nav-item-custom bg-transparent">
+                                        <a href="chisiamo.html"  class="link text-decoration-none text-d-gray bg-transparent transistion-custom">Chi siamo</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div data-bs-toggle="collapse" data-bs-target="#collapseContent" class="col-1 ms-auto d-block d-lg-none bg-transparent">
+                                <button class="btn bg-transparent">
+                                    <i id="bars" class="fa-solid fa-bars text-g bg-transparent transistion-custom"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="collapseContent" class="container-fluid px-5 m-custom bg-w collapse fixed-top transistion-custom">
+        <div class="row bg-transparent">
+            <ul class=" bg-transparent list-unstyled">
+                <li class=" bg-transparent border-bottom border-1 mt-2 mb-1">
+                    <span class="nav-item-custom bg-transparent">
+                        <a href="#" class="link text-decoration-none text-gray bg-transparent transistion-custom">Home</a>
+                    </span>
+                </li>
+                <li class=" bg-transparent border-bottom border-1 mt-2">
+                    <span class="nav-item-custom bg-transparent">
+                        <a href="annunci.html"  class="link text-decoration-none text-gray bg-transparent transistion-custom">Annunci</a>
+                    </span>
+                </li>
+                <li class=" bg-transparent border-bottom border-1 mt-2">
+                    <span class="nav-item-custom bg-transparent">
+                        <a href="chisiamo.html"  class="link text-decoration-none text-gray bg-transparent transistion-custom">Chi siamo</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- navbar end  -->
+
+    <!-- Header start -->
+
+    <header class="container my-5 py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="fst-italic fw-bold fs-titolone text-white text-outline-custom">Presto.it</h1>
+            </div>
+            <div class="col-12 text-center">
+
+                <h4 class="text-gray opacity-75 mt-2 fst-italic">Consulta i nostri prodotti</h4>
+                <a href="annunci.html"><button class="btn-custom bg-g text-w px-5 w-25 mt-3">Prodotti!</button>
+            </div></a>
+        </div>
+    </header>
+
+    <!-- Header end -->
+
+    <!-- Number Section start -->
+
+    <div class="container my-5 py-5 border-top border-2">
+        <div class="row mb-5 pb-5">
+            <div class="col-12 text-center">
+                <h2 class="fs-titoletto">I nosti numeri</h2>
+            </div>
+        </div>
+        <div class="row vh-50">
+            <div class="col-12 col-md-6 border-2 border-end">
+                <img src="https://picsum.photos/1000" alt="" class="border-g-custom rounded-circle p-3 img-dim-custom">
+            </div>
+            <div class="col-12 col-md-6 ps-5">
+                <!-- Contenuto dei numeri creato dinamicamente su main.js ed aggiunto observer -->
+                <p class="border-2 border-bottom pb-3"><span id="num1" class="fs-titoletto me-2">0</span>Vendite</p>
+                <p class="border-2 border-bottom pb-3"><span id="num2" class="fs-titoletto me-2">0</span>Valutazioni</p>
+                <p class="border-2 border-bottom pb-3"><span id="num3" class="fs-titoletto me-2">0</span>Recensioni</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Number Section end-->
+
+    <!-- Bulletin Section start -->
+
+    <div class="container my-5 py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="fs-titoletto">I nostri ultimi prodotti</h2>
+            </div>
+        </div>
+        <div id="wrapper" class="row justify-content-evenly mt-5">
+            <!-- Contenuto creato dinamicamente su main.js -->
+        </div>
+    </div>
+
+    <!-- Bulletin Section end -->
+
+    <!-- review section start -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="fs-titoletto">Le ultime recensioni</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="swiper mySwiper">
+                    <div id="swiperWrapper" class="swiper-wrapper">
+                        <!-- Contenuto creato dinamicamente su main.js -->
+                    </div>
+                    <div class="swiper-button-next text-d-gray"></div>
+                    <div class="swiper-button-prev text-d-gray"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- review section end -->
+
+
+
+
+
+
+
+
+
+
+    <!-- script SwiperJs -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- script fontawesome -->
+    <script src="https://kit.fontawesome.com/648482cfc8.js" crossorigin="anonymous"></script>
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- script custom -->
+    <script src="main.js"></script>
+</body>
+</html>
